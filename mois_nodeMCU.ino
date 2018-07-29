@@ -97,13 +97,13 @@ void loop() {
    if(value<50)
    {
       digitalWrite(WET, HIGH);
-      char a[]="{\"body\":\"Tmo Capsule And One Tablet was taken Successfully. Thank You\",\"title\":\"OK, Medicine Taken\",\"type\":\"note\"}";
+      char a[]="{\"body\":\"The plant is thirsty, need to give water and proper nursing.\",\"title\":\"Lake of Moisture..\",\"type\":\"note\"}";
        conn(a);
    }
    else
    {
       digitalWrite(DRY,HIGH);
-     char a[]="{\"body\":\"Two Capsule And One Tablet was taken Successfully. Thank You\",\"title\":\"OK, Medicine Taken\",\"type\":\"note\"}";
+     char a[]="{\"body\":\"The moisture level is ok, ensure proper nursing of the plant\",\"title\":\"Moisture level ok.\",\"type\":\"note\"}";
     conn(a);
    }
    delay(1000);
